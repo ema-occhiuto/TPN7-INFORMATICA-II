@@ -52,4 +52,4 @@ Para ejecutar la simulación:
 
 ## Esquemático del circuito
 
-![Circuito Arduino en SimulIDE](esquematico.png)
+![Circuito Arduino en SimulIDE](Cricuito.png)
