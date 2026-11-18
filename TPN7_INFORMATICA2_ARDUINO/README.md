@@ -50,6 +50,3 @@ Para ejecutar la simulación:
 4. Configurar el puerto serial correspondiente.
 5. Iniciar la simulación.
 
-## Esquemático del circuito
-
-![Circuito Arduino en SimulIDE](Cricuito.png)
