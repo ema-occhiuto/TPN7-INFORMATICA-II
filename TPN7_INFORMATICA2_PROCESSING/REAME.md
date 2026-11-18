@@ -80,3 +80,4 @@ Los estados de las salidas se actualizan en la interfaz según la información r
 ## Observaciones
 
 Los puertos COM10 y COM11 corresponden a la configuración utilizada durante el desarrollo. Si se utilizan otros puertos, se debe modificar la configuración de SimulIDE y la instrucción de apertura del puerto serial en Processing.
+En caso que utilicemos un Arduino UNO fisico, tendremos que configurar un solo puerto, por ejemplo COM6, y tanto Arduino IDE como processing deberan utilizar el mismo puerto.
