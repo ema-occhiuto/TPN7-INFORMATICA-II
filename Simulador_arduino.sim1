@@ -1,0 +1,45 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-96,-136" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="../TPN7_INFORMATICA2_ARDUINO.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="SerialPort" CircId="SerialPort-3" mainComp="false" Show_id="false" Show_Val="false" Pos="228,-48" rotation="0" hflip="1" vflip="1" label="SerialPort-3" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="false" Port="COM10" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="LedRgb" CircId="LedRgb-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-240,-60" rotation="0" hflip="1" vflip="1" label="LedRgb-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" CommonCathode="true" Threshold_R="2.4 V" MaxCurrent_R="30 mA" Resistance_R="0.6 Ω" Threshold_G="3.5 V" MaxCurrent_G="30 mA" Resistance_G="0.6 Ω" Threshold_B="3.5 V" MaxCurrent_B="30 mA" Resistance_B="0.6 Ω" />
+
+<item itemtype="Push" CircId="Push-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-268,-128" rotation="0" hflip="1" vflip="1" label="Push-14" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Push" CircId="Push-15" mainComp="false" Show_id="false" Show_Val="false" Pos="-324,-128" rotation="0" hflip="1" vflip="1" label="Push-15" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Resistor" CircId="Resistor-26" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-188,-60" rotation="0" hflip="1" vflip="1" label="Resistor-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="-252,-128" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="-148,-60" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="SerialPort-3-pin0" endpinid="Uno-1-0" pointList="188,-56,92,-56,92,-172,-124,-172,-124,-120,-88,-120" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="SerialPort-3-pin1" endpinid="Uno-1-1" pointList="188,-40,84,-40,84,-164,-116,-164,-116,-112,-88,-112" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="LedRgb-10-Pin0" endpinid="Uno-1-5" pointList="-256,-68,-256,-80,-88,-80" />
+
+<item itemtype="Connector" uid="Connector-66" startpinid="Uno-1-6" endpinid="LedRgb-10-Pin2" pointList="-88,-72,-268,-72,-268,-52,-256,-52" />
+
+<item itemtype="Connector" uid="Connector-67" startpinid="Push-14-pinP0" endpinid="Uno-1-7" pointList="-284,-128,-284,-92,-100,-92,-100,-64,-88,-64" />
+
+<item itemtype="Connector" uid="Connector-68" startpinid="Push-15-pinP0" endpinid="Uno-1-8" pointList="-340,-128,-340,-84,-104,-84,-104,-48,-88,-48" />
+
+<item itemtype="Connector" uid="Connector-82" startpinid="LedRgb-10-Pin3" endpinid="Resistor-26-lPin" pointList="-224,-60,-204,-60" />
+
+<item itemtype="Connector" uid="Connector-85" startpinid="Node-27-1" endpinid="Node-28-1" pointList="-252,-128,-148,-128,-148,-60" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="Push-15-switch0pinN" endpinid="Node-27-0" pointList="-308,-128,-308,-160,-240,-160,-240,-128,-252,-128" />
+
+<item itemtype="Connector" uid="Connector-87" startpinid="Node-27-2" endpinid="Push-14-switch0pinN" pointList="-252,-128,-252,-128" />
+
+<item itemtype="Connector" uid="Connector-88" startpinid="Resistor-26-rPin" endpinid="Node-28-0" pointList="-172,-60,-148,-60" />
+
+<item itemtype="Connector" uid="Connector-89" startpinid="Node-28-2" endpinid="Uno-1-GND2" pointList="-148,-60,-112,-60,-112,0,-88,0" />
+
+</circuit>
