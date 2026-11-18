@@ -52,6 +52,5 @@ Para ejecutar la simulación:
 
 ## Esquemático del circuito
 
-A continuación se muestra el circuito utilizado para el desarrollo del trabajo práctico.
-
+![Circuito Arduino en SimulIDE](circuito.png)
 
