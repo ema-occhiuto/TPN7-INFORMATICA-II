@@ -38,7 +38,7 @@ Arduino recibe estos comandos y actualiza las salidas correspondientes.
 
 ## Requisitos
 
-Para ejecutar el proyecto se necesitan:
+Para ejecutar el proyecto se necesita (en caso que simulemos arduino UNO con SimulIDE o cualquier otro simulador)
 
 - Processing con la biblioteca `processing.serial`.
 - SimulIDE para simular el circuito Arduino.
