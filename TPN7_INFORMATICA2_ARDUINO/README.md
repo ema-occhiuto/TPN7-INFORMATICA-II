@@ -32,8 +32,8 @@ Los pulsadores están configurados mediante `INPUT_PULLUP`, por lo que se activa
 
 El programa realiza las siguientes operaciones:
 
-1. Lee continuamente el estado de los dos pulsadores.
-2. Enciende el LED correspondiente mientras su pulsador está presionado.
+1. Lee continuamente el estado de los dos pulsadores y de la variable booleana.
+2. Enciende el LED correspondiente mientras su pulsador está presionado,o cuando la variable booleana esta en true.
 3. Recibe los comandos `ROJO` y `AZUL` enviados desde Processing.
 4. Utiliza variables booleanas para mantener o cambiar el estado de los LED desde la interfaz gráfica.
 5. Envía a Processing los estados de las dos entradas y las dos salidas mediante comunicación serial a 9600 baudios.
