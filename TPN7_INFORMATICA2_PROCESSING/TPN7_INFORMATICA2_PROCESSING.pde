@@ -27,6 +27,9 @@ void draw(){
   textAlign(CENTER);
   text("CONTROL DE ENTRADAS Y SALIDAS",300,50);
   
+  //---------------------------------------------------
+  //Dibujamos los representantes de LED ROJO Y AZUL
+  //---------------------------------------------------
   //Led Rojo
   if(estadoRojo==1){
     fill(255,0,0);
@@ -52,7 +55,7 @@ void draw(){
   textSize(18);
   text("LED ROJO",180,270);
   text("LED AZUL",420,270);
-  
+  //-----------------------------------------------
   
   //BOTON DE LED ROJO
   fill(200);
@@ -69,6 +72,9 @@ void draw(){
   text("CONTROL ROJO",180,335);
   text("CONTROL AZUL",420,335);
   
+  //----------------------------------------------
+  //Dibujamos los representantes de las ENTRADA 1 Y 2
+  //----------------------------------------------
   //ENTRADA 1
   if(estadoEntrada1==0){
     fill(0,200,0);
@@ -91,7 +97,7 @@ void draw(){
   fill(0);
   text("E2",420,90);
 }
-  
+  //------------------------------------------
   
   
   
@@ -101,7 +107,7 @@ void serialEvent(Serial puerto){
 
   if(mensaje!=null){
       mensaje=trim(mensaje);//eliminamos los saltos de linea
-      
+     
       String[] datos=split(mensaje,',');
       
       if (datos.length == 4) {
@@ -130,13 +136,13 @@ void mousePressed(){
  //Boton rojo
  if(mouseX>=110 && mouseX<=250 &&
  mouseY>=310 && mouseY<=360){
-   puerto.write("ROJO\n");
+   puerto.write("ROJO\n");//ENVIAMOS A ARDUINO EL SIGUIENTE MENSAJE
  }
  
  //Boton azul
  if(mouseX>=350 && mouseX<=490 &&
  mouseY>=310 && mouseY<=360){
-     puerto.write("AZUL\n");
+     puerto.write("AZUL\n");//ENVIAMOS A ARDUINO EL SIGUIENTE MENSAJE
  }
 }
   
