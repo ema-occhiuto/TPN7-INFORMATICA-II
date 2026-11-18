@@ -12,7 +12,7 @@ El programa permite controlar dos LED mediante pulsadores y recibir comandos des
 - 1 LED rojo
 - 1 LED azul
 - 2 pulsadores
-  1 resistencia(220ohm) limitadora de corriente para los LED
+- 1 resistencia(220ohm) limitadora de corriente para los LED
 - Puerto serial virtual para la comunicación con Processing
 
 ## Conexiones del circuito
