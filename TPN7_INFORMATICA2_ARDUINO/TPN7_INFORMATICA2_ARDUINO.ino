@@ -43,14 +43,14 @@ else{
 
   // Enviamos los estados de las entradas
   Serial.print("E1:");//Mandamos el mensaje del estado 1
-  Serial.println(digitalRead(pulsador1));
+  Serial.print(digitalRead(pulsador1));
 
-  Serial.print("E2:");//Mandamos el mensaje del estado 2
-  Serial.println(digitalRead(pulsador2));
+  Serial.print(",E2:");//Mandamos el mensaje del estado 2
+  Serial.print(digitalRead(pulsador2));
 
   
   //Enviamos los estados de las salidas 
-  Serial.print("LED1:");
+  Serial.print(",LED1:");
   Serial.print(digitalRead(ledRojo));
 
   Serial.print(",LED2:");
@@ -59,6 +59,9 @@ else{
   delay(100);
 }
 
+
+
+//Funcion encargarda de recibir los mensajes de Processing
 void recibirMensajeProcessing(){
   if(Serial.available()>0){
 
