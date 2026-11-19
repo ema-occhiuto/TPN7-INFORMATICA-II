@@ -48,4 +48,4 @@ Ademas utilize VSPE (puertos seriales virtuales) para la comunicacion birideccio
 
 En el siguiente video se muestra el funcionamiento del sistema, la simulación del circuito en SimulIDE y la comunicación con Processing.
 
-**Enlace al video:** 
+**Enlace al video:** https://drive.google.com/file/d/10CM3IBRmS499cv5kyzJ-UmN3QXA1TwyM/view?usp=drive_link
